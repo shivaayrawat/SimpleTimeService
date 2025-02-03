@@ -22,6 +22,12 @@ Docker is needed to build, run, and manage containers.
 You can verify that Docker is correctly installed by running:
 docker --version
 
+2. Git
+Git is needed to clone the repository to your local machine.
+
+Installation Guide: Git Installation
+You can verify that Git is correctly installed by running:
+git --version
 
 Clone the Repository
 To get started, clone the repository to your local machine:
