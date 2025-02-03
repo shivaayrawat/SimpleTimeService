@@ -36,7 +36,7 @@ Git is needed to clone the repository to your local machine.
 ## Clone the Repository
 To get started, clone the repository to your local machine:
 ```sh
-git clone https://github.com/your-username/SimpleTimeService.git
+git clone https://github.com/shivaayrawat/SimpleTimeService.git
 ```
 Navigate into the project directory:
 ```sh
