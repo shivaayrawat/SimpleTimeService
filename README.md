@@ -105,5 +105,4 @@ docker pull 945shivamrawat/simple-time-service:latest
 
 ---
 
-### 🎉 Now your **SimpleTimeService** is ready to use!
 
