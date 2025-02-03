@@ -4,8 +4,8 @@
 
 ### Purpose
 The **SimpleTimeService** is a lightweight microservice built using Flask. It returns a JSON response that includes:
-- **Current timestamp**
 - **IP address of the client making the request**
+- **Current timestamp**
 
 This service is built as a Docker container to ensure easy deployment across different environments.
 
@@ -75,8 +75,8 @@ After the container is running, you can access the **SimpleTimeService** by navi
 The response will be a JSON object that includes the timestamp and IP address of the client:
 ```json
 {
-  "timestamp": "2025-01-31T14:45:00.123456",
-  "ip": "160.191.123.133"
+  "ip": "160.191.123.133",
+  "timestamp": "2025-01-31T14:45:00.123456"
 }
 ```
 
