@@ -22,7 +22,7 @@ Docker is needed to build, run, and manage containers.
 You can verify that Docker is correctly installed by running:
 docker --version
 
-### 1. **Git**
+### 2. **Git**
 Git is needed to clone the repository to your local machine.
 
 Installation Guide: Git Installation
