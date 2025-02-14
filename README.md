@@ -241,7 +241,7 @@ AWS CLI is used to interact with AWS services from your local machine.
 ---
 
 ### Accessing the Application
-Once the infrastructure is deployed, the load balancer's DNS name will be provided as an output.
+Once the infrastructure is deployed, the load balancer's DNS name will be provided as an output.Wait a few seconds to properly start the ECS service.
 
 📌 Access the application using the load balancer URL. The response will include the timestamp and IP address in JSON format:
 ```json
@@ -261,23 +261,6 @@ terraform destroy
 Confirm the destruction by typing `yes` when prompted.
 
 ---
-
-### Repository Structure
-
-```
-SimpleTimeService/
-├── README.md                # Documentation for the project
-├── Dockerfile               # Dockerfile for SimpleTimeService
-├── app/                     # Application source code
-│   └── app.py               # Flask application
-├── Terraform/               # Terraform configuration files
-│   ├── backend.tf           # Backend configuration for Terraform state
-│   ├── main.tf              # Main Terraform resources
-│   ├── outputs.tf           # Terraform output values
-│   ├── variables.tf         # Input variables for Terraform
-│   └── terraform.tfvars     # Variable values
-└── .gitignore               # Files and folders to ignore in Git
-```
 
 ---
 
