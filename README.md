@@ -193,6 +193,22 @@ AWS CLI is used to interact with AWS services from your local machine.
    ```
    Replace `<your-bucket-name>`, `<your-region>`, and `<your-table-name>` with the values you created earlier.
 
+
+5. **Update the terraform,tfvars**:
+   Below is the example,kindly put your own values 
+```hcl
+     region                = "us-east-1"
+     vpc_cidr_block        = "10.0.0.0/16"
+     subnet_public_a_cidr  = "10.0.1.0/24"
+     subnet_public_b_cidr  = "10.0.2.0/24"
+     subnet_private_a_cidr = "10.0.3.0/24"
+     subnet_private_b_cidr = "10.0.4.0/24"
+     desired_task_count    = 2
+    # ecr_image_uri        = "577638394240.dkr.ecr.us-east-1.amazonaws.com/central-registry:latest"
+    ecr_repository_name   = "central-registry"
+    docker_image_name     = "simple-time-service:latest"
+    lb_name               = "my-load-balancer"  # Add a name for your load balancer
+```
 ---
 
 ### Infrastructure Setup with Terraform
