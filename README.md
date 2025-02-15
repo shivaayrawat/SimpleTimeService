@@ -194,7 +194,7 @@ AWS CLI is used to interact with AWS services from your local machine.
    Replace `<your-bucket-name>`, `<your-region>`, and `<your-table-name>` with the values you created earlier.
 
 
-5. **Update the terraform,tfvars**:
+5. **Update the terraform.tfvars**:
    Below is the example,kindly put your own values 
 ```hcl
      region                = "us-east-1"
