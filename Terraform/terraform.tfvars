@@ -5,7 +5,6 @@ subnet_public_b_cidr  = "10.0.2.0/24"
 subnet_private_a_cidr = "10.0.3.0/24"
 subnet_private_b_cidr = "10.0.4.0/24"
 desired_task_count    = 2
-#ecr_image_uri          =    "577638394240.dkr.ecr.us-east-1.amazonaws.com/central-registry:latest"
 ecr_repository_name   = "central-registry"
 docker_image_name     = "simple-time-service:latest"
 lb_name               = "my-load-balancer"  # Add a name for your load balancer
