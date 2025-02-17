@@ -1,5 +1,5 @@
-# Use a lightweight Python base image
-FROM python:3.11-slim
+# Use an ARM64-compatible Python base image
+FROM --platform=linux/arm64 python:3.11-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
@@ -13,8 +13,8 @@ WORKDIR /app
 # Copy application files
 COPY app.py /app/
 
-# Install Flask and requests
-RUN pip install flask requests
+# Install dependencies
+RUN pip install --no-cache-dir flask requests
 
 # Change ownership to non-root user
 RUN chown -R appuser:appgroup /app
@@ -25,5 +25,5 @@ USER appuser
 # Expose the application port
 EXPOSE 5000
 
-# Run the application
-CMD ["python", "app.py"]
+# Ensure Python is explicitly set to python3
+CMD ["python3", "app.py"]
